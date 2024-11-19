@@ -1,0 +1,46 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://ninjateam.org/wp-content/uploads/2016/12/chat_bot-01.jpg",
+            "size": "stretch",
+            "altText": "IT Support Bot"
+        },
+        {
+            "type": "TextBlock",
+            "spacing": "medium",
+            "size": "default",
+            "weight": "bolder",
+            "text": "Ticket Creation",
+            "wrap": true,
+            "maxLines": 0
+        },
+        {
+            "type": "TextBlock",
+            "text": "Please provide details for your support ticket.",
+            "wrap": true
+        },
+        {
+            "type": "Input.Text",
+            "id": "title",
+            "placeholder": "Enter the ticket title",
+            "label": "Title"
+        },
+        {
+            "type": "Input.Text",
+            "id": "description",
+            "placeholder": "Enter a description",
+            "label": "Description",
+            "isMultiline": true
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit Ticket"
+        }
+    ]
+}
